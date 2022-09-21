@@ -85,17 +85,8 @@ flagTr.addEventListener('click', () => {
 
 suppBtn.addEventListener('click', (event) => {
     window.buttons.support()
-    /*
-    event.preventDefault()
-    shell.openExternal('https://discord.gg/cknUdH94Cn', {
-        activate: true,
-    })
-    */
 })
-
-
 initialization()
-
 window.msg.receive("fromMain", async (data) => {
     switch (data) {
         case 'CLEAN_IT':

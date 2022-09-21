@@ -98,13 +98,12 @@ const createWindow = () => {
                 win.webContents.send('fromMain', `${folders[(folders.length - 1)]}||green`)
                 win.webContents.send('fromMain', `Searching for a chat.log file in this folder...`)
                 if (!list.find(file => file === 'chat.log')) { return win.webContents.send('fromMain', `chat.log not found inside ${folders[(folders.length - 1)]}. Please, write something in the in-game chat then restart the app ^^`) }
-                // ici demander le choix de langue ?
-                win.webContents.send('fromMain', `Found :||green`)
-                win.webContents.send('fromMain', `/${folders[(folders.length - 1)]}/chat.log||green`)
                 win.webContents.send('fromMain', `CLEAN_IT`)
+                win.webContents.send('fromMain', `This project is open-source: https://github.com/JimmyGaubert/CCT2`)
+                win.webContents.send('fromMain', `Join the support server to be kept informed of updates :p`)
+                win.webContents.send('fromMain', `File found: /${folders[(folders.length - 1)]}/chat.log ||green`)
                 win.webContents.send('fromMain', `Starting to read the changes in chat.log :)||green`)
                 let linesArray = []
-
                 setInterval(() => {
                     fs.readFile(`C:${process.env.HOMEPATH}/Documents/My games/Crossout/Logs/${folders[(folders.length - 1)]}/chat.log`, (error, filedata) => {
                         if (error) { return console.error(error); }

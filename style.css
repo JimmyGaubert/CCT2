@@ -37,11 +37,16 @@ body {
     cursor:default;
     
 }
-.link {
+.link, .linkred {
     -webkit-app-region: no-drag;
 }
 .link:hover {
     color:rgb(60, 255, 0);
+    cursor:default;
+    -webkit-app-region: nodrag;
+}
+.linkred:hover {
+    color:red;
     cursor:default;
     -webkit-app-region: nodrag;
 }
@@ -87,7 +92,7 @@ body {
     margin:0;
 }
 .green {
-    color: green;
+    color: rgb(60, 255, 0);
 }
 .cyan {
     color: cyan;
