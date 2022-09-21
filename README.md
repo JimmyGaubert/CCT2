@@ -7,7 +7,7 @@ A desktop app made with [electron](https://www.electronjs.org/) and the [@iamtra
 
 This app translate the Crossout in-game chat and display the translation in several languages.
 
-Join the [support](discord.gg/cknUdH94Cn) to get the last compiled executable. Open an issue if you want to contribute... :)
+Join the [support](https://discord.gg/cknUdH94Cn) to get the last compiled executable. Open an issue if you want to contribute... :)
 
 You can also find a [demo on youtube](https://www.youtube.com/watch?v=c74gQv3vJMY) !
 
